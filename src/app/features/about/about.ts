@@ -18,7 +18,7 @@ export class AboutComponent {
   readonly skillCategories: SkillCategory[] = [
     {
       name: 'Frontend',
-      skills: ['React', 'React Native', 'TypeScript', 'JavaScript', 'Material UI', 'Fluent UI', 'Redux', 'Bootstrap', 'HTML5 / CSS3'],
+      skills: ['React', 'React Native', 'Vue.js', 'TypeScript', 'JavaScript', 'Material UI', 'Fluent UI', 'Redux', 'Bootstrap', 'HTML5 / CSS3'],
     },
     {
       name: 'Backend',

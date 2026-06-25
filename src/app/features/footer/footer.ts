@@ -16,7 +16,7 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
         <!-- Social links -->
         <div class="flex items-center gap-4" role="list" aria-label="Liens sociaux">
           <a
-            href="https://github.com/florianwu"
+            href="https://github.com/flaironne"
             target="_blank"
             rel="noopener noreferrer"
             class="text-zinc-500 hover:text-zinc-300 transition-colors duration-200"
@@ -27,7 +27,7 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
             </svg>
           </a>
           <a
-            href="https://linkedin.com/in/florianwu"
+            href="https://linkedin.com/in/flaironne"
             target="_blank"
             rel="noopener noreferrer"
             class="text-zinc-500 hover:text-zinc-300 transition-colors duration-200"
