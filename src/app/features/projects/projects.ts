@@ -46,6 +46,18 @@ export class ProjectsComponent {
       badge: 'Projet pro',
     },
     {
+      title: 'Travel Order Resolver',
+      description:
+        "Chatbot intelligent de recherche d'itinéraires ferroviaires : " +
+        "extraction des gares en langage naturel (CamemBERT/NLP) " +
+        "et analyse du réseau SNCF modélisé en graphe Neo4j.",
+      gradient: 'from-emerald-900/50 to-teal-900/50',
+      accentColor: '#34d399',
+      stack: ['React Native', 'Python', 'CamemBERT', 'NLP', 'Neo4j'],
+      githubUrl: 'https://github.com/flaironne',
+      badge: 'Projet scolaire',
+    },
+    {
       title: 'Job Board',
       description:
         `Plateforme full-stack de recherche d'emploi : dépôt d'offres,
