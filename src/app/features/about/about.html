@@ -1,0 +1,76 @@
+<section
+  id="about"
+  class="py-24 lg:py-32 px-4"
+  aria-labelledby="about-title"
+>
+  <div class="max-w-6xl mx-auto">
+
+    <!-- Section header -->
+    <div appFadeIn class="mb-16">
+      <p class="text-emerald-400 text-sm font-mono font-medium tracking-wider uppercase mb-3">01. À propos</p>
+      <h2 id="about-title" class="text-3xl sm:text-4xl font-bold text-zinc-50 mb-4">
+        Qui suis-je ?
+      </h2>
+      <div class="w-16 h-px bg-emerald-400"></div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+
+      <!-- Bio text -->
+      <div appFadeIn [delay]="100" class="space-y-5 text-zinc-400 leading-relaxed">
+        <p>
+          En fin de Master en Informatique à <span class="text-zinc-200 font-medium">EPITECH Strasbourg</span>,
+          spécialité <span class="text-zinc-200 font-medium">IA & Big Data</span>, je combine une
+          formation solide en génie logiciel avec une expérience concrète acquise en alternance
+          depuis janvier 2024 chez SOC Informatique.
+        </p>
+        <p>
+          J'interviens sur des produits full-stack à forte composante métier — architecture
+          <span class="text-zinc-200 font-medium">React / TypeScript</span> côté client,
+          APIs <span class="text-zinc-200 font-medium">Node.js / Express</span> et
+          <span class="text-zinc-200 font-medium">Python FastAPI</span> côté serveur,
+          pipelines de données et expérimentation IA en R&D.
+          J'accorde une attention particulière à la cohérence UX et à la maintenabilité.
+        </p>
+        <p>
+          Multilingue (français, anglais C1, allemand B2, chinois B2 oral), je recherche
+          un CDI à partir d'<span class="text-zinc-200 font-medium">octobre 2026</span>,
+          en présentiel ou remote autour de Strasbourg / Mulhouse.
+        </p>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-3 gap-4 pt-6 border-t border-zinc-800">
+          <div>
+            <p class="text-2xl font-bold text-zinc-50">2+</p>
+            <p class="text-xs text-zinc-500 mt-0.5">ans en alternance</p>
+          </div>
+          <div>
+            <p class="text-2xl font-bold text-zinc-50">10+</p>
+            <p class="text-xs text-zinc-500 mt-0.5">projets livrés</p>
+          </div>
+          <div>
+            <p class="text-2xl font-bold text-zinc-50">4</p>
+            <p class="text-xs text-zinc-500 mt-0.5">langues parlées</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="space-y-8">
+        @for (category of skillCategories; track category.name; let i = $index) {
+          <div appFadeIn [delay]="150 + i * 80">
+            <h3 class="text-xs font-semibold text-zinc-500 uppercase tracking-wider mb-3">
+              {{ category.name }}
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              @for (skill of category.skills; track skill) {
+                <app-badge>{{ skill }}</app-badge>
+              }
+            </div>
+          </div>
+        }
+      </div>
+
+    </div>
+  </div>
+</section>
