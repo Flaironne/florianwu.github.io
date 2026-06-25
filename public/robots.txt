@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://flaironne.github.io/sitemap.xml

@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, inject } from '@angular/core';
 import { NavbarComponent } from './shared/components/navbar/navbar';
 import { HeroComponent } from './features/hero/hero';
 import { AboutComponent } from './features/about/about';
@@ -6,6 +6,7 @@ import { ProjectsComponent } from './features/projects/projects';
 import { ExperienceComponent } from './features/experience/experience';
 import { ContactComponent } from './features/contact/contact';
 import { FooterComponent } from './features/footer/footer';
+import { SeoService } from './core/services/seo.service';
 
 @Component({
   selector: 'app-root',
@@ -23,4 +24,8 @@ import { FooterComponent } from './features/footer/footer';
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
-export class App {}
+export class App {
+  constructor() {
+    inject(SeoService).update();
+  }
+}
